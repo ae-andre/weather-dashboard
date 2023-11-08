@@ -7,16 +7,33 @@
     <title>Weather Dashboard</title>
   </head>
   <body>
-    <header></header>
-    <div class="search">
-      <input type="text" name="city-search" id="city-search" />
-      <input type="button" value="Search" id="submit-search" />
-    </div>
-    <main>
-      <section class="current-weather">current weather</section>
+    <header>
+      <h1>Weather Dashboard</h1>
+    </header>
+    <div class="container">
+      <div class="search">
+        <h2>Search by city:</h2>
+        <input type="text" name="city-search" id="city-search" />
+        <input type="button" value="Search" id="submit-search" />
+        <ul class="search-history"></ul>
+      </div>
 
-      <section class="five-day">5-day forecast</section>
-    </main>
+      <main>
+        <section class="current-weather"></section>
+
+        <section class="five-day">
+          <h2>5 Day Forecast</h2>
+          <div class="card-container">
+            <article id="weather-card" class="weather-card1"></article>
+            <article id="weather-card" class="weather-card2"></article>
+            <article id="weather-card" class="weather-card3"></article>
+            <article id="weather-card" class="weather-card4"></article>
+            <article id="weather-card" class="weather-card5"></article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.7.1.js"
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
